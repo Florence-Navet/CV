@@ -1,0 +1,116 @@
+/* Style global */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(56, 211, 159);
+}
+
+header {
+    text-align: center; /* Centre le contenu dans le header */
+    padding: 20px 0; /* Espacement vertical autour du contenu du header */
+}
+
+header h1 {
+    background-color: #2E7D32; /* La couleur de fond du h1 */
+    padding: 10px 20px; /* Ajoute un peu d'espace autour du texte */
+    display: inline-block; /* Limite la largeur du h1 à son contenu */
+    color: white; /* Couleur du texte */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+img {
+    max-width: 180px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+/* A propos de moi à côté de l'image */
+.apropos {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /*ajoute de l'espace entre les colonnes*/
+    margin-top: 20px;
+}
+.apropos img {
+    order: 1; /* Afficher l'image à droite */
+}
+
+.apropos div {
+    flex: 1; /* Le texte prend l'espace restant */
+}
+
+/* Structure en grille pour deux colonnes */
+.grid-2-columns {
+   display: grid;
+   grid-template-columns: 1fr 1fr; /*divise en deux colonnes*/
+   gap: 20px; /*espacement entre les colonnes*/
+   margin-bottom: 30px;
+}
+
+.grid-2-columns > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(82, 79, 79, 0.126);
+}
+
+/* Enlever les points des listes et ajuster l'espacement */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul li {
+    margin-bottom: 5px;
+}
+/* Titres de section */
+h2 {
+    color: #2E7D32;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2E7D32; /*sous les h2*/
+    padding-bottom: 5px;
+    padding-left: 10px; /*decole les titres de la bordure*/
+}
+
+/* Structure globale du CV */
+main {
+    max-width: 1000px;/*limite la section main à 1000pixels*/
+    margin: 20px auto; /*20px en haut et en bas centrée*/
+    padding: 20px; /*20 pixels tout autour du contenu à l'intérieur de la section <main>*/
+}
+/* Espacement pour les expériences professionnelles */
+.marine, .varsef {
+    margin-bottom: 20px;
+}
+
+/* Image sous la section Ariane Formation */
+.formation-img {
+    margin-top: 10px; /* Ajuste cette valeur pour ajuster la distance sous Ariane Formation */
+    text-align: center; /* Aligne l'image à droite */
+}
+
+.formation-img img {
+    border-radius: 8px; /* Ajoute un léger arrondi aux coins de l'image */
+    max-width: 150px; /* Ajuste la taille de l'image */
+}
+
+/* Footer GitHub */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+.github a {
+    display: inline-block; /* Assure que le lien n'occupe que son propre espace */
+    padding: 10px 20px; /* Ajoute de l'espace à l'intérieur du lien */
+    background-color: #2E7D32; /* Arrière-plan du lien */
+    color: white; /* Couleur du texte du lien */
+    text-decoration: none; /* Enlève la sous-ligne */
+    border-radius: 5px; /* Arrondit les coins du bouton */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+.github a:hover {
+    background-color: #1B5E20; /* Change la couleur du bouton au survol */
+}
